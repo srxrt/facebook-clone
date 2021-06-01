@@ -1,26 +1,31 @@
 {
-  "name": "facebook-clone",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
-  },
-  "dependencies": {
-    "@heroicons/react": "^1.0.1",
-    "dotenv": "^10.0.0",
-    "firebase": "^8.6.3",
-    "next": "10.2.3",
-    "next-auth": "^3.24.0",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "react-firebase-hooks": "^3.0.4",
-    "tailwind-scrollbar-hide": "^1.0.3"
-  },
-  "devDependencies": {
-    "autoprefixer": "^10.2.6",
-    "postcss": "^8.3.0",
-    "tailwindcss": "^2.1.2"
-  }
+	"name": "facebook-clone",
+	"version": "0.1.0",
+	"private": true,
+	"homepage": "https://shokhrukh-rt.github.io/facebook-clone",
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"export": "next export",
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d build"
+	},
+	"dependencies": {
+		"@heroicons/react": "^1.0.1",
+		"dotenv": "^10.0.0",
+		"firebase": "^8.6.3",
+		"next": "10.2.3",
+		"next-auth": "^3.24.0",
+		"react": "17.0.2",
+		"react-dom": "17.0.2",
+		"react-firebase-hooks": "^3.0.4",
+		"tailwind-scrollbar-hide": "^1.0.3"
+	},
+	"devDependencies": {
+		"autoprefixer": "^10.2.6",
+		"gh-pages": "^3.2.0",
+		"postcss": "^8.3.0",
+		"tailwindcss": "^2.1.2"
+	}
 }

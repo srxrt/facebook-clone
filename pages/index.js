@@ -25,7 +25,7 @@ export default function Home({ session, posts }) {
 	);
 }
 
-export async function getServerSideProps(context) {
+export async function getInitialProps(context) {
 	const session = await getSession(context);
 
 	const posts = await db
